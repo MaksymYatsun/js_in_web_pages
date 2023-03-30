@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap");
 
 @tailwind base;
 @tailwind components;
 
 .size-mark {
-  @apply relative text-[10px] after:w-6 after:h-6 after:border after:border-[#DEDEDE] after:absolute after:-left-2 after:-top-[2px] after:rounded-full;
+  @apply relative text-[10px] after:absolute after:-left-2 after:-top-[2px] after:h-6 after:w-6 after:rounded-full after:border after:border-[#DEDEDE];
 }
 
 @tailwind utilities;

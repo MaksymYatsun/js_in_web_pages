@@ -2,62 +2,66 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Open fashion</title>
-  <link href="../dist/output.css" rel="stylesheet">
+  <link href="../dist/output.css" rel="stylesheet" />
   <script async src="index.js"></script>
 </head>
 
 <body class="mx-auto font-body text-body">
   <header>
-    <div class="container mx-auto flex flex-row justify-between pt-5 pb-2 px-4">
+    <div class="container mx-auto flex flex-row justify-between px-4 pt-5 pb-2">
       <div>
         <a href="">
-          <img src="img/menu.svg" alt="">
+          <img src="img/menu.svg" alt="" />
         </a>
       </div>
       <a href="">
-        <img src="img/logo.svg" alt="">
+        <img src="img/logo.svg" alt="" />
       </a>
       <div class="flex flex-row">
-        <form class="w-6 h-6 mr-4 cursor-pointer" action="" style="background-image: url(img/search.svg);">
-        </form>
+        <form class="mr-4 h-6 w-6 cursor-pointer" action="" style="background-image: url(img/search.svg)"></form>
         <a href="">
-          <img src="img/shopping-bag.svg" alt="">
+          <img src="img/shopping-bag.svg" alt="" />
         </a>
       </div>
     </div>
   </header>
   <main>
     <div class="container mx-auto max-w-sm pt-6 pl-4 pr-3">
-      <div class="flex justify-between mb-9">
+      <div class="mb-9 flex justify-between">
         <span class="uppercase leading-10">4500 Apparel</span>
         <div class="flex text-xs text-label">
           <select id="filters"
-            class="text-sm block bg-[#C4C4C4] bg-opacity-10 rounded-full h-9 mr-3 pt-[1px] pl-3 w-[73px]">
+            class="mr-3 block h-9 w-[73px] rounded-full bg-[#C4C4C4] bg-opacity-10 pt-[1px] pl-3 text-sm">
             <option selected value="new">New</option>
             <option value="most-liked">Most Liked</option>
           </select>
-          <button class="bg-[#C4C4C4] bg-opacity-10 rounded-[100%] h-9 w-9 mr-3">
-            <img class="mx-auto" src="img/grid-view.svg" alt="">
+          <button class="mr-3 h-9 w-9 rounded-[100%] bg-[#C4C4C4] bg-opacity-10">
+            <img class="mx-auto" src="img/grid-view.svg" alt="" />
           </button>
-          <button class="bg-[#C4C4C4] bg-opacity-10 rounded-[100%] h-9 w-9">
-            <img class="mx-auto" src="img/filter.svg" alt="">
+          <button class="h-9 w-9 rounded-[100%] bg-[#C4C4C4] bg-opacity-10">
+            <img class="mx-auto" src="img/filter.svg" alt="" />
           </button>
         </div>
       </div>
-      <div class="mb-13" id="clothes-list">
-      </div>
+      <div class="mb-13" id="clothes-list"></div>
       <div class="">
         <ul class="flex justify-center">
-          <li class="bg-body text-white mr-4 px-2 cursor-pointer">1</li>
-          <li class="bg-placeholder bg-opacity-10 mr-4 px-2 cursor-pointer">2</li>
-          <li class="bg-placeholder bg-opacity-10 mr-4 px-2 cursor-pointer">3</li>
-          <li class="bg-placeholder bg-opacity-10 mr-4 px-2 cursor-pointer">4</li>
-          <li class="bg-placeholder bg-opacity-10 px-2 cursor-pointer">5</li>
-          <li class="bg-opacity-10 px-2 font-semibold cursor-pointer">></li>
+          <li class="mr-4 cursor-pointer bg-body px-2 text-white">1</li>
+          <li class="mr-4 cursor-pointer bg-placeholder bg-opacity-10 px-2">
+            2
+          </li>
+          <li class="mr-4 cursor-pointer bg-placeholder bg-opacity-10 px-2">
+            3
+          </li>
+          <li class="mr-4 cursor-pointer bg-placeholder bg-opacity-10 px-2">
+            4
+          </li>
+          <li class="cursor-pointer bg-placeholder bg-opacity-10 px-2">5</li>
+          <li class="cursor-pointer bg-opacity-10 px-2 font-semibold">></li>
         </ul>
       </div>
     </div>
@@ -65,35 +69,35 @@
   <footer>
     <div class="container mx-auto px-4">
       <div class="py-10">
-        <ul class="flex flex-row justify-between w-2/3 mx-auto">
+        <ul class="mx-auto flex w-2/3 flex-row justify-between">
           <li class="p-3">
             <a href="">
-              <img src="img/twitter.svg" alt="">
+              <img src="img/twitter.svg" alt="" />
             </a>
           </li>
           <li class="p-3">
             <a href="">
-              <img src="img/instagram.svg" alt="">
+              <img src="img/instagram.svg" alt="" />
             </a>
           </li>
           <li class="p-3">
             <a href="">
-              <img src="img/youtube.svg" alt="">
+              <img src="img/youtube.svg" alt="" />
             </a>
           </li>
         </ul>
       </div>
       <span
-        class="bg-label bg-opacity-50 mx-auto w-32 h-[1px] block relative after:w-2 after:h-2 after:bg-white after:border after:border-label after:border-opacity-50 after:rotate-45 after:top-[-3.5px] after:left-1/2 after:absolute"></span>
-      <div class="py-10 text-center flex flex-col">
+        class="relative mx-auto block h-[1px] w-32 bg-label bg-opacity-50 after:absolute after:top-[-3.5px] after:left-1/2 after:h-2 after:w-2 after:rotate-45 after:border after:border-label after:border-opacity-50 after:bg-white"></span>
+      <div class="flex flex-col py-10 text-center">
         <a href="mailto:support@openui.design">support@openui.design</a>
         <a href="tel:+60 825 876">+60 825 876</a>
-        <p> 08:00 - 22:00 - Everyday</p>
+        <p>08:00 - 22:00 - Everyday</p>
       </div>
       <span
-        class="bg-label bg-opacity-50 mx-auto w-32 h-[1px] block relative after:w-2 after:h-2 after:bg-white after:border after:border-label after:border-opacity-50 after:rotate-45 after:top-[-3.5px] after:left-1/2 after:absolute"></span>
+        class="relative mx-auto block h-[1px] w-32 bg-label bg-opacity-50 after:absolute after:top-[-3.5px] after:left-1/2 after:h-2 after:w-2 after:rotate-45 after:border after:border-label after:border-opacity-50 after:bg-white"></span>
       <div class="py-10">
-        <ul class="flex flex-row mx-auto justify-between w-2/3">
+        <ul class="mx-auto flex w-2/3 flex-row justify-between">
           <li class="p-3">
             <a href="">About</a>
           </li>
@@ -107,8 +111,10 @@
       </div>
     </div>
   </footer>
-  <div class="bg-[#C4C4C4] bg-opacity-10 py-6 w-full">
-    <p class="text-center text-label">Copyright© OpenUI All Rights Reserved.</p>
+  <div class="w-full bg-[#C4C4C4] bg-opacity-10 py-6">
+    <p class="text-center text-label">
+      Copyright© OpenUI All Rights Reserved.
+    </p>
   </div>
 </body>
 
