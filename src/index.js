@@ -88,12 +88,12 @@ function generateList(items) {
     const listItem = document.createElement("li");
     listItem.classList.add("flex", "justify-between", "mb-3");
 
-    const itemImg = document.createElement("img");
-    itemImg.src = item.imgSrc;
-    itemImg.classList.add("max-w-[100px]", "h-full");
+    const img = document.createElement("img");
+    img.src = item.imgSrc;
+    img.classList.add("max-w-[100px]", "h-full");
 
-    const itemInfo = document.createElement("div");
-    itemInfo.classList.add("text-sm", "pt-3", "pl-3", "flex", "flex-col");
+    const info = document.createElement("div");
+    info.classList.add("text-sm", "pt-3", "pl-3", "flex", "flex-col");
 
     const itemBrand = document.createElement("p");
     itemBrand.textContent = item.brand;
@@ -103,66 +103,66 @@ function generateList(items) {
       "mb-1",
       "tracking-[0.125rem]"
     );
-    itemInfo.appendChild(itemBrand);
+    info.appendChild(itemBrand);
 
-    const itemTitle = document.createElement("p");
-    itemTitle.classList.add("mb-1", "text-label");
-    itemTitle.textContent = item.title;
-    itemInfo.appendChild(itemTitle);
+    const title = document.createElement("p");
+    title.classList.add("mb-1", "text-label");
+    title.textContent = item.title;
+    info.appendChild(title);
 
-    const itemPrice = document.createElement("div");
-    itemPrice.textContent = "$" + item.price;
-    itemPrice.classList.add("text-[#DD8560]", "text-sm");
-    itemInfo.appendChild(itemPrice);
+    const price = document.createElement("div");
+    price.textContent = "$" + item.price;
+    price.classList.add("text-[#DD8560]", "text-sm");
+    info.appendChild(price);
 
-    const itemRating = document.createElement("div");
-    itemRating.classList.add("flex", "my-auto", "text-xs");
-    itemInfo.appendChild(itemRating);
+    const rating = document.createElement("div");
+    rating.classList.add("flex", "my-auto", "text-xs");
+    info.appendChild(rating);
 
     const ratingStar = document.createElement("img");
     ratingStar.src = "img/star.svg";
     ratingStar.classList.add("mr-[2px]");
-    itemRating.appendChild(ratingStar);
+    rating.appendChild(ratingStar);
 
     const ratingPoint = document.createElement("p");
     ratingPoint.textContent = item.rating + " Rating";
     ratingPoint.classList.add("text-label");
-    itemRating.appendChild(ratingPoint);
+    rating.appendChild(ratingPoint);
 
-    const itemBottom = document.createElement("div");
-    itemBottom.classList.add("flex", "justify-between");
-    itemInfo.appendChild(itemBottom);
+    const bottom = document.createElement("div");
+    bottom.classList.add("flex", "justify-between");
+    info.appendChild(bottom);
 
-    const itemBottomSizes = document.createElement("div");
-    itemBottomSizes.classList.add("flex");
-    itemBottom.appendChild(itemBottomSizes);
+    const bottomSizes = document.createElement("div");
+    bottomSizes.classList.add("flex");
+    bottom.appendChild(bottomSizes);
 
     const sizeText = document.createElement("p");
     sizeText.textContent = "Size";
     sizeText.classList.add("mr-4");
-    itemBottomSizes.appendChild(sizeText);
+    bottomSizes.appendChild(sizeText);
 
     const sizeS = document.createElement("span");
     sizeS.textContent = "S";
     sizeS.classList.add("mr-5", "size-mark");
-    itemBottomSizes.appendChild(sizeS);
+    bottomSizes.appendChild(sizeS);
 
     const sizeM = document.createElement("span");
     sizeM.textContent = "M";
     sizeM.classList.add("mr-5", "size-mark");
-    itemBottomSizes.appendChild(sizeM);
+    bottomSizes.appendChild(sizeM);
 
     const sizeL = document.createElement("span");
     sizeL.classList.add("size-mark");
     sizeL.textContent = "L";
-    itemBottomSizes.appendChild(sizeL);
+    bottomSizes.appendChild(sizeL);
 
-    const itemBottomHeart = document.createElement("img");
-    itemBottomHeart.src = "img/heart.svg";
-    itemBottom.appendChild(itemBottomHeart);
+    const bottomHeart = document.createElement("img");
+    bottomHeart.src = "img/heart.svg";
+    bottom.appendChild(bottomHeart);
 
-    listItem.appendChild(itemImg);
-    listItem.appendChild(itemInfo);
+    listItem.appendChild(img);
+    listItem.appendChild(info);
     list.appendChild(listItem);
   });
 
